@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harubic | Beranda</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- feather icon -->
+    <script src="js/feather.js"></script>
+
+</head>
+
+<body class="font-roboto">
+
+    <!-- awal navbar -->
+    <nav class="py-1 px-4 bg-light w-full shadow-md fixed top-0 z-40">
+        <div class="container">
+            <div class="flex justify-between">
+                <!-- baris awal -->
+                <div class="flex gap-6">
+                    <!-- hamburger menu -->
+                    <div class="flex flex-col justify-center relative w-6 gap-2 sm:hidden">
+                        <input type="checkbox" id="nav-toggle" class="absolute z-20 w-full h-full opacity-0 hover:cursor-pointer peer">
+                        <span class="before:absolute before:border before:border-black before:w-full peer-checked:rotate-45 peer-checked:translate-y-3 transition"></span>
+                        <span class="before:absolute before:border before:border-black before:w-full peer-checked:opacity-0 transition"></span>
+                        <span class="before:absolute before:border before:border-black before:w-full peer-checked:-translate-y-1 peer-checked:-rotate-45 transition"></span>
+                    </div>
+                    <!-- brand -->
+                    <a href="/"><img src="img/name.png" alt="Brand" class="h-12"></a>
+                </div>
+                <!-- nav-link -->
+                <div class="flex sm:items-center absolute mt-[3.2rem] bg-light border-t py-2 px-3 w-2/3 left-0 h-screen shadow-lg -translate-x-full transition-transform duration-300 sm:translate-x-0 sm:static sm:mt-0 sm:h-fit sm:shadow-none z-50" id="navbar-nav">
+                    <ul class="flex gap-4 flex-col w-full sm:flex-row">
+                        <li class="border-slate-300 pb-1 bg-zinc-200 py-1 px-2 transition sm:border-none sm:bg-transparent">
+                            <a href="#" class="text-primary w-full block">
+                                <i data-feather="home" class="inline mr-4 sm:hidden"></i> Home
+                            </a>
+                        </li>
+                        <li class="border-slate-300 pb-1 hover:bg-zinc-200 py-1 px-2 rounded transition sm:border-none sm:hover:bg-transparent">
+                            <a href="#" class="hover:text-primary w-full block">
+                                <i data-feather="layout" class="inline mr-4 sm:hidden"></i> Blog
+                            </a>
+                        </li>
+                        <li class="border-slate-300 pb-1 hover:bg-zinc-200 py-1 px-2 transition sm:border-none sm:hover:bg-transparent">
+                            <a href="#" class="hover:text-primary w-full block">
+                                <i data-feather="grid" class="inline mr-4 sm:hidden"></i> Topik
+                            </a>
+                        </li>
+                        <li class="border-slate-300 pb-1 hover:bg-zinc-200 py-1 px-2 transition sm:border-none sm:hover:bg-transparent">
+                            <a href="#" class="hover:text-primary w-full block">
+                                <i data-feather="info" class="inline mr-4 sm:hidden"></i> About
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- search/ login -->
+                <div class="flex items-center h-12 gap-4">
+                    <i class="hover:text-primary cursor-pointer mr-3" data-feather="search"></i>
+                    <i class="hover:text-primary cursor-pointer" data-feather="bell"></i>
+                    <i class="hover:text-primary cursor-pointer" data-feather="user-plus"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <div class="container mt-20">
+        <!-- hero -->
+        <main class="h-72 sm:h-80 md:h-96">
+            <figure class="h-full relative">
+                <img src="img/gambar-1.jpg" alt="main" class="h-full rounded w-2/3">
+                <figcaption class="absolute border rounded py-2 px-3 bg-light top-5 right-5 w-2/4 h-5/6 shadow-md">
+                    <article class="h-full">
+                        <header class="flex flex-col gap-1 h-full">
+                            <h2 class="font-bold mb-2">
+                                30 Quotes For You To Celebrate Your Congratulations
+                            </h2>
+                            <div class="h-full">
+                                <div class="relative h-1/2 overflow-hidden mb-2  sm:h-2/3 md:h-3/4">
+                                    <p class="font-thin text-sm">
+                                        Occasionally, you may wish to determine if the currently authenticated user is authorized to perform a given action without writing a dedicated gate that corresponds to the action. Laravel allows you to...
+                                    </p>
+                                    <div class="absolute border-b h-full w-full bg-gradient-to-b from-transparent to-white top-0"></div>
+                                </div>
+                                <a href="#" class="border bg-primary px-2 py-1 rounded text-white font-thin hover:opacity-80 transition-opacity">Read More</a>
+                            </div>
+                        </header>
+                    </article>
+                </figcaption>
+            </figure>
+        </main>
+        <!-- akhir hero -->
+
+        <!-- bagian jelajahi topik -->
+        <section class="mt-5 grid-rows-2">
+            <header class="relative pb-1 before:absolute before:border before:border-black before:bottom-0 before:w-2/4">
+                <h1>Jelajahi Topik</h1>
+            </header>
+            <div class="overflow-hidden h-16 py-3 px-1">
+                <div class="flex w-max h-full text-white">
+                    <a href="#" class="text-center block mr-3">
+                        <div class="relative w-48 h-full group">
+                            <img src="img/gambar-1.jpg" class="absolute -z-50 brightness-50 group-hover:filter-none transition">
+                            <h3 class="font-bold translate-y-3 group-hover:text-slate-50">Binatang</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="text-center block mr-3">
+                        <div class="relative w-48 h-full group">
+                            <img src="img/gambar-1.jpg" class="absolute -z-50 brightness-50 group-hover:filter-none transition">
+                            <h3 class="font-bold translate-y-3 group-hover:text-slate-50">Binatang</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="text-center block mr-3">
+                        <div class="relative w-48 h-full group">
+                            <img src="img/gambar-1.jpg" class="absolute -z-50 brightness-50 group-hover:filter-none transition">
+                            <h3 class="font-bold translate-y-3 group-hover:text-slate-50">Binatang</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="text-center block mr-3">
+                        <div class="relative w-48 h-full group">
+                            <img src="img/gambar-1.jpg" class="absolute -z-50 brightness-50 group-hover:filter-none transition">
+                            <h3 class="font-bold translate-y-3 group-hover:text-slate-50">Binatang</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="text-center block mr-3">
+                        <div class="relative w-48 h-full group">
+                            <img src="img/gambar-1.jpg" class="absolute -z-50 brightness-50 group-hover:filter-none transition">
+                            <h3 class="font-bold translate-y-3 group-hover:text-slate-50">Binatang</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- akhir bagian jelajahi topik -->
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- js -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
