@@ -63,7 +63,7 @@
                 <!-- search/ login -->
                 <div class="flex items-center h-12 gap-4">
                     <i class="hover:text-primary cursor-pointer mr-3 tooltip-trigger" data-feather="search" data-tooltip="Cari" id="search-trigger"></i>
-                    <i class="hover:text-primary cursor-pointer tooltip-trigger" data-feather="bell" data-tooltip="Notifikasi"></i>
+                    <i class="hover:text-primary cursor-pointer block tooltip-trigger dropdown" data-feather="bell" data-tooltip="Notifikasi" data-target="#notifikasi"></i>
                     <i class="hover:text-primary cursor-pointer tooltip-trigger" data-feather="user-plus" data-tooltip="Buat Akun"></i>
                 </div>
             </div>
@@ -71,10 +71,12 @@
     </nav>
 
     <!-- search -->
-    <div class="absolute top-0 right-0 bottom-0 left-0 bg-dark bg-opacity-80 z-50 text-slate-300 hidden" id="searchModal">
-        <p class="absolute top-20 right-1/3">Tekan Dimana saja untuk keluar</p>
-        <div class="flex flex-col items-center justify-center w-full h-full">
-            <div class="h-1/2 w-96 px-4 py-5" id="searchSection">
+    <section class="absolute top-0 right-0 bottom-0 left-0 bg-dark backdrop-blur-sm bg-opacity-80 z-50 text-slate-300 hidden " id="searchModal">
+        <div class="absolute top-20 w-full text-center">
+            Tekan Dimana saja untuk keluar
+        </div>
+        <div class="flex flex-col items-center justify-center w-full h-full sticky">
+            <div class="h-1/2 w-80 px-4 py-5 sm:w-96" id="searchSection">
                 <div class="flex flex-col">
                     <section class="border-b border-slate-300 pb-3 mb-3">
                         <h2 class=" mb-2">Search Pages</h2>
@@ -95,7 +97,16 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- notifikasi -->
+    <section class="absolute h-32 bg-light w-64 z-[60] rounded top-14 p-2 shadow-md right-10 hidden dropdown-content" id="notifikasi">
+        <h2 class="relative before:absolute before:border-b before:border-slate-400 before:w-2/3 before:-bottom-1 before:"><i data-feather="bell" class="inline mr-1"></i>Notifikasi Kamu</h2>
+        <div class="row-auto">
+            <article>
+
+            </article>
+        </div>
+    </section>
     <!-- akhir navbar -->
 
     <div class="container mt-20">
