@@ -9,7 +9,6 @@ $(document).ready(function() {
     $('#nav-toggle:checkbox').change(function() {
         if (this.checked) {
             hideAndShowNavbarNav(true, navbarNav)
-            console.log(navbarNav.navbar);
         } else {
             hideAndShowNavbarNav(false, navbarNav)
         }
@@ -88,7 +87,7 @@ $(document).ready(function() {
             nav.navbar = "hide"
         } else {
             nav.removeClass('-translate-x-full')
-            $('body').addClass(' overflow-y-hidden')
+            $('body').addClass('overflow-y-hidden')
             nav.navbar = "show"
         }
     }
